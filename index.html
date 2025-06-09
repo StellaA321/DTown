@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Detroit Family Trip Itinerary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/Detroit_Skyline_%28123143197%29.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0f7fa;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2em;
+      padding-bottom: 5em; /* Space for footer */
+      min-height: 100vh;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 128, 0.5);
+      padding: 1em 0;
+      z-index: 1000;
+      text-align: center;
+    }
+    header h1, header h2 {
+      margin: 0;
+      color: #f1c40f;
+    }
+    .content {
+      padding-top: 120px;
+    }
+    h3 {
+      text-align: center;
+      color: #f1c40f;
+    }
+    .section {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 5px solid #f1c40f;
+      margin: 1em 0;
+      padding: 1em;
+      border-radius: 8px;
+    }
+    .entry {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #ccc;
+      padding: 0.5em 0;
+    }
+    .time {
+      width: 25%;
+      font-weight: bold;
+      padding-right: 1em;
+      border-right: 2px solid #f1c40f;
+    }
+    .detail {
+      width: 75%;
+      padding-left: 1em;
+    }
+    a {
+      color: #10d8cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #FFC300;
+    }
+    .attendees-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.5em;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+    .site-footer {
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1em;
+      background-color: rgba(0, 0, 128, 0.6);
+      color: #c70935;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .entry {
+        flex-direction: column;
+      }
+      .time, .detail {
+        width: 100%;
+        border: none;
+        padding: 0.2em 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Trip</h1>
+    <h2>Detroit, MI : June 12th - June 15th, 2025</h2>
+  </header>
+
+  <div class="overlay content">
+
+    <details class="section">
+      <summary>Attendees</summary>
+      <ul class="attendees-grid">
+        <li>Pink Daisy</li>
+        <li>Louis</li>
+        <li>Consqualla</li>
+        <li>Johnnie</li>
+        <li>Khailia</li>
+        <li>Karston</li>
+        <li>Kaylynn</li>
+        <li>Alex</li>
+        <li>Consuela</li>
+        <li>Christian</li>
+        <li>DJ</li>
+        <li>Ethan</li>
+        <li>Constella</li>
+        <li>Tyron</li>
+        <li>Zoë</li>
+        <li>Mia</li>
+        <li>Eva</li>
+      </ul>
+    </details>
+
+    <details class="section">
+      <summary>Flight Confirmations (Delta Airlines)</summary>
+      <ul>
+        <li><strong>Consqualla, Khailia, Karston, Kaylynn & Alex</strong> – GN7KT3</li>
+        <li><strong>Johnnie</strong> – GP9HQ4</li>
+        <li><strong>Shawn, DJ, Ethan & Pink Daisy</strong> – JM2HHX</li>
+        <li><strong>Ty, Angel, Zoë, Mia & Eva</strong> – GXJKYA</li>
+        <li><strong>Louis & Christian</strong> – H2H65U</li>
+      </ul>
+    </details>
+
+    <details class="section">
+      <summary>Thursday, June 12th</summary>
+      <div class="entry"><div class="time">6:00 pm (5:00 CST)</div><div class="detail">Arrive at Airport 6pm EST (5pm CST)</div></div>
+      <div class="entry"><div class="time">6:00 pm - 9:00 pm</div><div class="detail">Parking, Security, Dinner</div></div>
+      <div class="entry"><div class="time">9:40 pm</div><div class="detail">Depart ATL</div></div>
+      <div class="entry"><div class="time">11:43 pm</div><div class="detail">Arrive DTW</div></div>
+      <div class="entry"><div class="time">12:00 - 1:00 am</div><div class="detail">Pick up Vans (TURO) and travel to AirBnB (242 Melbourne St, Detroit, MI 48202)</div></div>
+    </details>
+
+    <details class="section">
+      <summary>Friday, June 13th</summary>
+      <div class="entry"><div class="time">9:00 am</div><div class="detail">Wake - Breakfast of Choice</div></div>
+      <div class="entry"><div class="time">10:00 - 12:00</div>
+        <div class="detail">Reunion Tour:
+          <ul>
+            <li>Family Home - 17655 Rowe St.</li>
+            <li>OLGC School - 17142 Rowe St.</li>
+            <li>Fleming School - 18501 Waltham St.</li>
+            <li>St. Von Steuben - 12300 Linnhurst St.</li>
+            <li>Osborn High - 11600 E 7 Mile Rd.</li>
+            <li>Better Made - 10148 Gratiot Ave.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry"><div class="time">12:00 - 1:30</div><div class="detail">Lunch Options: 
+        <a href="https://www.instagram.com/eatatberts/">Eat at Berts - Eastern Market</a>, 
+        <a href="https://zorbas-coney-island.restaurants-world.com/">Zorba Coney Island</a>, 
+        <a href="https://sindbads.com/">Sindbads</a>, 
+        <a href="https://motowncafegrill.com/">Motown Cafe & Grill</a>
+      </div></div>
+      <div class="entry"><div class="time">2:00 - 3:30</div><div class="detail"><a href="https://www.motownmuseum.org/">Motown Museum</a> ($20 adults, $17 students/seniors/children, Free 4 & under - last tour 5 pm)</div></div>
+      <div class="entry"><div class="time">3:30 - 3:45</div><div class="detail"><a href="https://www.google.com/maps/place/Lincoln+Street+Art+Park/">Lincoln Street Art Park</a> (Graffiti Wall/Mural for Photos)</div></div>
+      <div class="entry"><div class="time">3:45 - 5:00</div><div class="detail"><a href="https://gmrencen.com/">GM Renaissance Center Tour</a> (Free Entry, Parking - $Fee)</div></div>
+      <div class="entry"><div class="time">5:00</div><div class="detail"><a href="https://www.thepeoplemover.com">People Mover - Free Rides</a></div></div>
+      <div class="entry"><div class="time">5:00 - 7:00</div><div class="detail">Dinner Options: 
+        <a href="https://www.unionassembly.com/">Union Assembly</a>, 
+        <a href="https://hudson-cafe.com/">The Hudson Cafe 
+        <a href="https://www.detroitshippingcompany.com/">Detroit Shipping Company</a></div></div>
+      <div class="entry"><div class="time">7:10 - 9:30</div><div class="detail">Detroit Tigers vs Reds Baseball Game (*Party in the Park: Hip Hop)</div></div>
+    <div class="entry"><div class="time">10:00 pm</div><div class="detail"><a href="https://www.thepeoplemover.com">People Mover - Free Rides</a></div>
+</div>
+  </details>
+
+  <details class="section">
+    <summary>Saturday, June 14th</summary>
+    <div class="entry"><div class="time">9:00</div><div class="detail">Wake - Breakfast of Choice</div></div>
+    <div class="entry"><div class="time">10:00 - 10:30</div><div class="detail">Detroit Department of Transportation - 100 Mack Ave</div></div>
+    <div class="entry"><div class="time">10:30 - 12:30</div><div class="detail"><a href="https://www.michigan.org/property/belle-isle-park">Belle Isle</a> (Nature Center/Aquarium - opens 10am) $11 per vehicle</div></div>
+    <div class="entry"><div class="time">1:00 - 2:00</div><div class="detail">Lunch Options: 
+      <a href="https://slowsbarbq.com/">Slow Bar BQ</a>, 
+      <a href="https://www.greektowndetroit.org/">Greektown</a>, 
+      <a href="https://detroit.eater.com/maps/best-restaurants-detroit-38">Detroit Eater Picks</a></div></div>
+    <div class="entry"><div class="time">3:00 - 4:30</div><div class="detail"><a href="https://www.thewright.org/">Charles H. Wright Museum</a> ($15 adults, $12 seniors/youth, Free 5 & under)</div></div>
+    <div class="entry"><div class="time">4:30 - 5:00</div><div class="detail">Uncle Moses House - 12720 Tuller St.</div></div>
+    <div class="entry"><div class="time">5:00 - 8:00</div><div class="detail">Explore Detroit/Canada Options: 
+      <a href="https://farmington.zap-zone.com/">Zap Zone</a>, 
+      <a href="https://fun-zonez.com/">Fun ZoneZ</a>, 
+      <a href="https://visitdetroit.com/destinations/windsor-ontario/">Canada Visit</a></div></div>
+    <div class="entry"><div class="time">8:30</div><div class="detail"><a href="https://www.theblockdet.com/">The Block</a> Family Dinner Reservations 8:30 pm</div></div>
+    <div class="entry"><div class="time">10:00 - until</div><div class="detail">Free Choice &#128512 </div></div>
+  </details>
+
+  <details class="section">
+    <summary>Sunday, June 15th</summary>
+    <div class="entry"><div class="time">10:30</div><div class="detail">Wake - Breakfast of Choice</div></div>
+    <div class="entry"><div class="time">11:00 - 1:00</div><div class="detail"><a href="https://www.facebook.com/MtCalvaryMBCC/">Mt. Calvary Missionary Baptist Church</a> - 4743 Iroquois Ave</div></div>
+    <div class="entry"><div class="time">2:00 - 4:00</div><div class="detail">Brunch Options: 
+      <a href="https://www.centraldetroit.com/menu/">Central Kitchen & Bar</a>, 
+      <a href="https://mcshanespub.com/">McShane's Irish Pub</a>, 
+      <a href="https://www.eatdimestore.com/">Dime Store</a>, 
+      <a href="https://thejaggedfork.com/">The Jagged Fork</a></div></div>
+    <div class="entry"><div class="time">4:00 - 6:00</div><div class="detail">Free Choice &#128512 </div></div>
+    <div class="entry"><div class="time">6:30 - 7:00</div><div class="detail">Drive to Airport</div></div>
+    <div class="entry"><div class="time">9:50 pm</div><div class="detail">Depart DTW</div></div>
+    <div class="entry"><div class="time">11:55 pm</div><div class="detail">Arrive ATL</div></div>
+  </details>
+
+</div>
+<footer class="site-footer">
+  <p>All times and locations are subject to change.</p>
+</footer>
+</body>
+
+</html>
